@@ -1,0 +1,498 @@
+{
+  "version": "3.0.0",
+  "revision": "5a2e98daade313c4f376120f38427eb19a108e8c",
+  "localSourceRoot": "${CODEX_HOME:-~/.codex}/skills/video-shotcraft",
+  "sourceOverrideEnvironment": "TERUYA_SHOTCRAFT_DIR",
+  "note": "Reference registry, not installed native presets. Original values must not be confused with custom brand defaults. Visual reskin follows the supplied design Markdown; motion grammar preserved.",
+  "recipes": [
+    {
+      "recipeId": "type-rhythm-sync",
+      "styleKey": "karaoke-fill-sync",
+      "source": {
+        "card": {
+          "path": "references/shots/typography/type-rhythm-sync.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/typography/type-rhythm-sync.md",
+          "sha256": "aa6bd4fb39d8f898d2e84330a6e666c4658d9ffc01932b3a9789487dbb8ef099"
+        },
+        "demo": {
+          "path": "demos/typography/type-rhythm-sync/KaraokeFillSync.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/typography/type-rhythm-sync/KaraokeFillSync.tsx",
+          "sha256": "1643902b3173494f4f488658febc91a83440692df09af62bd93fda9b9dafd6cf"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "wordProgress": "linear from recorded start/end",
+        "stackedTextLayers": 2,
+        "maskEdgePercent": "p * 108 - 4",
+        "maskFeatherPercent": 4,
+        "readColorRetreatFrames": 10,
+        "underlineRetractFrames": 6,
+        "tailHoldFrames": 20
+      },
+      "teruyaAdaptation": [
+        "Substituir tempos de demonstração pelo áudio real.",
+        "Aumentar contraste da camada ainda não lida.",
+        "Remover waveform sintética ou substituí-la por áudio real."
+      ],
+      "validationChecks": [
+        "Camadas idênticas alinhadas; máscara contínua por palavra.",
+        "Conferir entrada, meio e fim de uma palavra e transição para a próxima."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "blur-slide",
+      "styleKey": "blur-slide",
+      "source": {
+        "card": {
+          "path": "references/shots/typography/blur-slide.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/typography/blur-slide.md",
+          "sha256": "feb73479174b0ff073a6d774c6ed3bd250591439fbd750e1167c2f39b27a05d4"
+        },
+        "demo": {
+          "path": "demos/typography/blur-slide/BlurSlide.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/typography/blur-slide/BlurSlide.tsx",
+          "sha256": "4e7227b050b4f9fdd0c8762f308aaf2a152f8c476fa3e11efe84b3a23cc43a91"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "linkedChannels": [
+          "opacity",
+          "translateY",
+          "blur"
+        ],
+        "curve": [
+          0.22,
+          1,
+          0.36,
+          1
+        ],
+        "headlineFontPx": 170,
+        "headlineYpx": 64,
+        "headlineBlurPx": 18,
+        "wordGapFrames": 4,
+        "wordDurationFrames": 22,
+        "heroDurationFrames": 30
+      },
+      "teruyaAdaptation": [
+        "SF Pro e paleta azul/branco.",
+        "Recompor quebra de linha em 9:16; relacionar y e blur ao tamanho de fonte.",
+        "Alinhar frases à fala; não apagar blur sem registrar a diferença."
+      ],
+      "validationChecks": [
+        "Os três canais usam o mesmo progresso.",
+        "Verificar sobreposição entre entradas e hold final legível."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "lead-word-zoom-assemble",
+      "styleKey": "lead-word-zoom-assemble",
+      "source": {
+        "card": {
+          "path": "references/shots/typography/lead-word-zoom-assemble.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/typography/lead-word-zoom-assemble.md",
+          "sha256": "bd5495bc055d134f1de7d27816d67c2ba5449ca27a5838437e03c6a03972167d"
+        },
+        "demo": {
+          "path": "demos/typography/lead-word-zoom-assemble/LeadWordZoomAssemble.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/typography/lead-word-zoom-assemble/LeadWordZoomAssemble.tsx",
+          "sha256": "7f344745da762ad9eb5f3073963adda41e16dffec707b46b397eaac6a9c4ab35"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "durationFrames": 84,
+        "initialScale": 2.3,
+        "holdFrames": 12,
+        "pushRatio": 1.06,
+        "recedeFrames": 12,
+        "assembleTranslationFrames": 24,
+        "zoomCurve": [
+          0.5,
+          0,
+          0.05,
+          1
+        ],
+        "wordDelayFrames": 6,
+        "wordStaggerFrames": 4,
+        "wordDurationFrames": 12,
+        "originalFinalCrashFrames": 12
+      },
+      "teruyaAdaptation": [
+        "Preservar âncora medida da palavra; recompor para texto curto em 9:16.",
+        "Variante teruya sem crash final: registrar como adaptação.",
+        "Trocar look e tipografia; manter protagonismo e continuidade da palavra."
+      ],
+      "validationChecks": [
+        "Conferir centro/baseline durante zoom e montagem.",
+        "Não cortar letras essenciais nem reduzir o efeito a um fade."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "title-demote-to-label",
+      "styleKey": "title-demote-to-label",
+      "source": {
+        "card": {
+          "path": "references/shots/typography/title-demote-to-label.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/typography/title-demote-to-label.md",
+          "sha256": "4e01c04c76d9f6a3f1b18e9c75ac1502cb1aefe1ac08ef47426b8628ea9fa08f"
+        },
+        "demo": {
+          "path": "demos/typography/title-demote-to-label/TitleDemoteToLabel.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/typography/title-demote-to-label/TitleDemoteToLabel.tsx",
+          "sha256": "5448cdf76c9eb57ebc4de46ae0f2e9bd399275e9600181afb26fe5dfbf0eeff5"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "variant": "A plain title",
+        "originalTitlePx": 220,
+        "originalLabelScale": 0.22,
+        "revealFrames": 16,
+        "standFrames": 20,
+        "demoteFrames": 26,
+        "curve": [
+          0.6,
+          0,
+          0.18,
+          1
+        ],
+        "contentOffsetFromDemoteFrames": 12
+      },
+      "teruyaAdaptation": [
+        "Dimensionar rótulo final em pixels de tela, mínimo 40 px.",
+        "Manter o mesmo objeto tipográfico antes e depois.",
+        "Recompor alvo para diagrama vertical."
+      ],
+      "validationChecks": [
+        "Escala e posição compartilham progresso e âncora.",
+        "Conteúdo aparece durante a chegada, sem colisão com título."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "pill-chip-slot-cycle-handled",
+      "styleKey": "pill-chip-slot-cycle-handled",
+      "source": {
+        "card": {
+          "path": "references/shots/typography/pill-chip-slot-cycle-handled.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/typography/pill-chip-slot-cycle-handled.md",
+          "sha256": "9744b9b58584d9170862e14d1d409888c1523adc05fe0ab3e17b1b984e071651"
+        },
+        "demo": {
+          "path": "demos/typography/pill-chip-slot-cycle-handled/PillChipSlotCycleHandled.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/typography/pill-chip-slot-cycle-handled/PillChipSlotCycleHandled.tsx",
+          "sha256": "6bd53f3fda0de8b60e6476a23f02165137d3865dfd09f08d6eb805ae0734c472"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "designSpace": [
+          480,
+          270
+        ],
+        "widthPaddingDesignPx": 74,
+        "rowPitchDesignPx": 48,
+        "transitionNormalizedStarts": [
+          0.25,
+          0.47,
+          0.69
+        ],
+        "transitionNormalizedDuration": 0.12,
+        "curve": "E.inOutCubic",
+        "neighborParallaxRatio": 0.5
+      },
+      "teruyaAdaptation": [
+        "Não copiar coordenadas 480x270 como pixels finais.",
+        "Medir texto com SF Pro carregada; largura e deslocamento compartilham progresso.",
+        "Trocar emojis por ícones próprios; chip azul e texto branco."
+      ],
+      "validationChecks": [
+        "Conferir recorte da palavra anterior e largura intermediária.",
+        "Glifos não esticam; vizinhos têm acompanhamento e clipping."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "list-reveal",
+      "styleKey": "list-reveal",
+      "source": {
+        "card": {
+          "path": "references/shots/ui-entrance/list-reveal.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/ui-entrance/list-reveal.md",
+          "sha256": "c8b818cc0a3e1e2a71a8709cedd2eaddae6d4fc9a89ba095f8fc5fa47112f8fe"
+        },
+        "demo": {
+          "path": "demos/ui-entrance/list-reveal/ListReveal.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/ui-entrance/list-reveal/ListReveal.tsx",
+          "sha256": "7cbaad7308ac39258458bc69c39211c1cab2665dc03d7eeb1475d21fcb4fef77"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "durationFrames": 120,
+        "eachFrames": 24,
+        "staggerFrames": 10,
+        "scale": [
+          0.82,
+          1
+        ],
+        "translateYPx": [
+          44,
+          0
+        ],
+        "blurPx": [
+          8,
+          0
+        ],
+        "curve": [
+          0.3,
+          1.18,
+          0.5,
+          1
+        ],
+        "iconDelayFrames": 2,
+        "detailDelayFrames": 4,
+        "containerDriftPx": 96,
+        "containerDriftCurve": "linear"
+      },
+      "teruyaAdaptation": [
+        "Três itens grandes em vez de seis pequenos; recompor 9:16.",
+        "Entradas nas menções reais; registrar novos tempos.",
+        "Separar drift do pai e chegada dos filhos; ajustar extensão sem cortar itens."
+      ],
+      "validationChecks": [
+        "Não omitir blur e follow-through sem marcar variante.",
+        "Hold de leitura após cada nome e ao fim da lista."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "draw-svg-trace",
+      "styleKey": "draw-svg-trace",
+      "source": {
+        "card": {
+          "path": "references/shots/ui-entrance/draw-svg-trace.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/ui-entrance/draw-svg-trace.md",
+          "sha256": "ff01903bfc3b66cb379a05c21fde03fdd42406e9e31947334358230bc0771952"
+        },
+        "demo": {
+          "path": "demos/ui-entrance/draw-svg-trace/DrawSvgTrace.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/ui-entrance/draw-svg-trace/DrawSvgTrace.tsx",
+          "sha256": "86b936da678d13f99205c6df14f99161af70ccf0f19a5e67b67a39e1b959939f"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "durationFrames": 132,
+        "traceStartFrame": 10,
+        "traceFrames": 40,
+        "curve": "inOutCubic",
+        "closurePeakFrames": 2,
+        "closureRelaxFrames": 6,
+        "strokePx": [
+          6,
+          11,
+          6
+        ],
+        "tailHoldFrames": 40,
+        "pathAndHead": "same arc-length geometry"
+      },
+      "teruyaAdaptation": [
+        "Harness ou conector próprio em azul; recompor para 9:16.",
+        "Preservar cabeça, fechamento e passagem para o contorno definitivo.",
+        "Conteúdo aparece no fechamento, não antes de desenhar a estrutura."
+      ],
+      "validationChecks": [
+        "Cabeça segue exatamente o traçado.",
+        "Nada fica desenhando em loop; forma final permite leitura."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "cursor-flyover",
+      "styleKey": "cursor-flyover",
+      "source": {
+        "card": {
+          "path": "references/shots/camera/cursor-flyover.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/camera/cursor-flyover.md",
+          "sha256": "2cc2f7ebcff90af1c45896d52a1e2748c2531406de4c08e3821c5d0bb76ac6aa"
+        },
+        "demo": {
+          "path": "demos/camera/cursor-flyover/CursorFlyover.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/camera/cursor-flyover/CursorFlyover.tsx",
+          "sha256": "5d26e3224fd1c822cdb863612ad137b344070c1cfc273e8dfd014c3700c777e5"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "world": [
+          2400,
+          1500
+        ],
+        "overviewScale": 0.66,
+        "detailScale": 1.3,
+        "cameraTravelFrames": 20,
+        "cameraCurve": [
+          0.55,
+          0,
+          0.18,
+          1
+        ],
+        "dwellFrames": 24,
+        "cursorStartsBeforeCameraFrames": 2,
+        "cursorTravelFrames": 16,
+        "cursorArrivesBeforeCameraFrames": 6,
+        "clickOffsetFrames": 22,
+        "returnFrames": 24
+      },
+      "teruyaAdaptation": [
+        "Usar interface real e ação fiel ao produto.",
+        "Recompor viewport e alvos verticais; manter cursor em tamanho de tela.",
+        "Preset abstrato de foco/retorno é teruya próprio, não esta receita completa."
+      ],
+      "validationChecks": [
+        "Clique produz resposta coerente.",
+        "Câmera repousa para leitura e retorna ao conjunto."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    },
+    {
+      "recipeId": "line-carry-transition",
+      "styleKey": "line-carry-transition",
+      "source": {
+        "card": {
+          "path": "references/shots/transition/line-carry-transition.md",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/references/shots/transition/line-carry-transition.md",
+          "sha256": "9713a493ec37da5b2820cc4151bdf577d121d4b4a40bc322f9e4995ff6f27da5"
+        },
+        "demo": {
+          "path": "demos/transition/line-carry-transition/LineCarryTransition.tsx",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/5a2e98daade313c4f376120f38427eb19a108e8c/demos/transition/line-carry-transition/LineCarryTransition.tsx",
+          "sha256": "34f5a0f1c78ba5f136f2dd04b9c05455fa5797bfaf1bc998ae3d87bb8d75a701"
+        }
+      },
+      "originalReferenceFps": 30,
+      "original": {
+        "durationFrames": 190,
+        "panStartFrame": 56,
+        "panEndFrame": 112,
+        "panPx": 1920,
+        "curve": [
+          0.65,
+          0,
+          0.35,
+          1
+        ],
+        "drawnDuringPan": "1144 + cameraPan",
+        "closureFrames": 24,
+        "posterStartFrame": 136,
+        "tailHoldFrames": 24
+      },
+      "teruyaAdaptation": [
+        "Usar apenas quando uma ligação justifica viajar à próxima cena.",
+        "Recalcular mundo, caminho e avanço para o viewport vertical.",
+        "Preservar acoplamento linha/câmera; não comprimir 190 frames numa transição de 12."
+      ],
+      "validationChecks": [
+        "Ponta e câmera mantêm relação espacial durante a viagem.",
+        "Contêiner fecha antes do novo conteúdo; comparar continuidade em playback."
+      ],
+      "implementation": {
+        "engine": null,
+        "nativeProject": null,
+        "render": null
+      },
+      "validation": {
+        "status": "pending",
+        "sourceFilesChecked": true,
+        "referencePlaybackCompared": false,
+        "verticalRenderReviewed": false
+      }
+    }
+  ]
+}

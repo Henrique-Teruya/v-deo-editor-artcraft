@@ -1,0 +1,29 @@
+{
+  "standardVersion": "3.0.0",
+  "family": "San Francisco / SF Pro",
+  "officialReference": "https://developer.apple.com/fonts/",
+  "source": {
+    "url": "https://developer.apple.com/fonts/",
+    "localVariableFile": "/System/Library/Fonts/SFNS.ttf",
+    "localSha256": "1b35abd1543cd1810cbf00482de14da43efbd5a9a9c13658c4f547dce552762a",
+    "provenance": "macOS-installed San Francisco; applicable OS font terms",
+    "redistributableFontAssetsBundled": false,
+    "manifest": "font-source.json"
+  },
+  "localFontVersion": "21.0d2e1",
+  "opticalInstances": {
+    "Text": 17,
+    "Display": 28
+  },
+  "manualWeightMapping": {
+    "Regular400": 400,
+    "Semibold600": 590
+  },
+  "mappingNote": "Axis values verified in named instances of this macOS SFNS file; semantic600 maps to named Semibold at590. Do not assume the same mapping for a different font file.",
+  "width": 100,
+  "grade": 400,
+  "noSilentFallback": true,
+  "preparedFontFiles": "temporary only; not included in project assets",
+  "pdfBuildEvidence": "output/pdf/font-build.json",
+  "historicalFontAssets": "assets/fonts/Inter-* and OFL belong to previous versions"
+}

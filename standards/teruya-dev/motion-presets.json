@@ -1,0 +1,157 @@
+{
+  "version": "3.0.0",
+  "classification": "teruya-custom, specification only",
+  "fpsReference": 30,
+  "status": "pending runtime implementation and motion review",
+  "rule": "Every focal object or focus layer has an entry and exit or continuous morph; one principal focus at a time. Scale is isotropic. Static supporting elements and a stable reading hold are allowed.",
+  "presets": [
+    {
+      "id": "elastic-pop-in-letter",
+      "role": "emphasis",
+      "unit": "grapheme",
+      "durationFrames": [
+        12,
+        16
+      ],
+      "scale": [
+        0.55,
+        1.08,
+        0.98,
+        1
+      ],
+      "opacityFrames": [
+        3,
+        4
+      ],
+      "staggerFrames": 1,
+      "maxCascadeFrames": 8,
+      "maxWordFrames": 24,
+      "curve": "damped elastic",
+      "pairedExit": "elastic-pop-out-letter",
+      "parentSpringAllowed": false
+    },
+    {
+      "id": "elastic-pop-out-letter",
+      "role": "emphasis",
+      "unit": "grapheme",
+      "durationFrames": [
+        10,
+        14
+      ],
+      "scale": [
+        1,
+        1.06,
+        0.55,
+        0
+      ],
+      "opacityTailFrames": [
+        4,
+        6
+      ],
+      "staggerFrames": 1,
+      "maxCascadeFrames": 6,
+      "maxWordFrames": 20,
+      "curve": "damped elastic",
+      "pairedEntry": "elastic-pop-in-letter",
+      "order": "reading, reverse or center-out as meaningful"
+    },
+    {
+      "id": "bubble-pop-center",
+      "entry": {
+        "durationFrames": 18,
+        "scale": [
+          0.88,
+          1.025,
+          1
+        ],
+        "opacityFrames": 4,
+        "origin": "center"
+      },
+      "exit": {
+        "durationFrames": 10,
+        "scale": [
+          1,
+          0.92
+        ],
+        "opacityTailFrames": 5
+      }
+    },
+    {
+      "id": "bubble-pop-origin",
+      "entry": {
+        "durationFrames": 20,
+        "scale": [
+          0.86,
+          1.03,
+          1
+        ],
+        "offsetPx": [
+          16,
+          40
+        ],
+        "origin": "connection target"
+      },
+      "exit": {
+        "durationFrames": [
+          12,
+          20
+        ],
+        "destination": "origin or parent merge"
+      }
+    },
+    {
+      "id": "bubble-pop-inline",
+      "scope": "support text and caption blocks; not emphasis letters",
+      "entry": {
+        "durationFrames": 10,
+        "scale": [
+          0.94,
+          1.015,
+          1
+        ],
+        "opacityFrames": 3,
+        "origin": "word center with baseline preserved"
+      },
+      "exit": {
+        "durationFrames": 8,
+        "scale": [
+          1,
+          0.96
+        ],
+        "opacityTailFrames": 4
+      }
+    },
+    {
+      "id": "bubble-pop-replace",
+      "entry": {
+        "durationFrames": [
+          20,
+          28
+        ],
+        "type": "width morph plus synchronized word swap"
+      },
+      "exit": {
+        "type": "merge into replacement; no duplicate focal text"
+      }
+    },
+    {
+      "id": "bubble-pop-frame",
+      "entry": {
+        "durationFrames": 18,
+        "scale": [
+          0.96,
+          1.01,
+          1
+        ],
+        "type": "frame or mask transform, no face distortion"
+      },
+      "exit": {
+        "durationFrames": [
+          10,
+          14
+        ],
+        "type": "frame collapse or contextual morph"
+      }
+    }
+  ]
+}

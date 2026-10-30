@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "templateOnly": true,
+  "project": {
+    "id": null,
+    "standard": "teruya.dev 3.0",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920
+  },
+  "scene": {
+    "id": null,
+    "idea": null,
+    "layoutVariant": null,
+    "layoutVariantOptions": [
+      "full-frame",
+      "presenter-whiteboard-60-40"
+    ],
+    "visualAction": null,
+    "background": {
+      "id": null,
+      "options": [
+        "plain",
+        "sketchbook-grid"
+      ],
+      "theme": null,
+      "role": "static-support"
+    },
+    "timeline": {
+      "startFrame": null,
+      "durationFrames": null
+    },
+    "source": {
+      "file": null,
+      "inSec": null,
+      "outSec": null
+    },
+    "spokenText": null,
+    "wordCues": [
+      {
+        "text": null,
+        "startSec": null,
+        "endSec": null,
+        "timeBase": "finalTimeline",
+        "manuallyReviewed": false
+      }
+    ],
+    "presenter": {
+      "visible": false,
+      "intervals": [],
+      "textBackground": "transparent",
+      "floatingTextVerified": false,
+      "fit": "cover",
+      "cropPriority": "speaking face",
+      "sideBlurAllowed": false,
+      "cropBounds": null,
+      "faceFramingVerified": false
+    },
+    "typography": {
+      "family": "SF Pro",
+      "displayFamily": "SF Pro Display",
+      "textFamily": "SF Pro Text",
+      "loadedFontVerified": false,
+      "sourceManifest": null,
+      "opticalSize": null,
+      "width": "normal"
+    },
+    "focalWord": null,
+    "emphasisTypography": {
+      "unit": "grapheme",
+      "entryPreset": "elastic-pop-in-letter",
+      "exitPreset": "elastic-pop-out-letter",
+      "preserveKerningAndAccents": true,
+      "graphemeCues": [],
+      "outline": {
+        "required": true,
+        "mode": "double-concentric",
+        "backgroundTone": null,
+        "innerColor": null,
+        "outerColor": null,
+        "innerVisibleWidthPx": null,
+        "outerVisibleWidthPx": null,
+        "paintOrder": [
+          "outer stroke",
+          "inner stroke",
+          "original fill"
+        ],
+        "alignedLayersVerified": false
+      },
+      "stableReadFrames": null
+    },
+    "phases": {
+      "entry": null,
+      "action": null,
+      "readHold": null,
+      "exitOrTransform": null
+    },
+    "worldObjects": [],
+    "objectTemplate": {
+      "id": null,
+      "role": null,
+      "allowedRoles": [
+        "static-support",
+        "focal"
+      ],
+      "motionTarget": "object or focus-layer",
+      "motionPreset": null,
+      "entry": {
+        "requiredWhen": "role=focal",
+        "startFrame": null,
+        "durationFrames": null,
+        "origin": null,
+        "direction": null
+      },
+      "hold": {
+        "startFrame": null,
+        "durationFrames": null,
+        "staticAllowed": true
+      },
+      "exit": {
+        "requiredWhen": "role=focal",
+        "startFrame": null,
+        "durationFrames": null,
+        "kind": null,
+        "destination": null
+      },
+      "motionEvidence": null
+    },
+    "camera": {
+      "space": "world",
+      "targetId": null,
+      "startFrame": null,
+      "durationFrames": null,
+      "centerFrom": null,
+      "centerTo": null,
+      "scaleFrom": 1,
+      "scaleTo": 1,
+      "curve": "camera",
+      "returnFrame": null
+    },
+    "captions": {
+      "space": "screen",
+      "fullSpeechCovered": false,
+      "safeZone": "tokens.layout.captions",
+      "cues": []
+    },
+    "motion": {
+      "classification": null,
+      "allowedClassifications": [
+        "shotcraft-adaptation",
+        "shotcraft-faithful-port",
+        "teruya-custom"
+      ],
+      "recipeId": null,
+      "styleKey": null,
+      "sourceRevision": "5a2e98daade313c4f376120f38427eb19a108e8c",
+      "sourceHash": null,
+      "engine": null,
+      "preservedParameters": {},
+      "changes": []
+    },
+    "sfx": [],
+    "evidence": {
+      "sourceReference": null,
+      "render": null,
+      "keyframes": [],
+      "playbackCompared": false
+    },
+    "review": {
+      "sfProLoadedAndMeasured": false,
+      "wordSync": false,
+      "phoneReadability": false,
+      "recipeFidelity": false,
+      "focalEntriesAndExits": false,
+      "bubblePopSettles": false,
+      "perLetterElasticEntryExit": false,
+      "doubleOutlineMatchesBackground": false,
+      "bothOutlineRingsVisible": false,
+      "cameraCroppedWithoutSideBlur": false,
+      "directionsFollowMeaning": false,
+      "audioListened": false,
+      "approved": false
+    }
+  }
+}

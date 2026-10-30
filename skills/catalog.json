@@ -1,0 +1,60 @@
+{
+  "standard": "teruya.dev 3.0",
+  "installation": "Official local Codex skill-installer; upstream files are not vendored in this repository.",
+  "packages": [
+    {
+      "repo": "Vincentwei1021/video-shotcraft",
+      "revision": "5a2e98daade313c4f376120f38427eb19a108e8c",
+      "skills": [
+        {
+          "name": "video-shotcraft",
+          "path": "."
+        }
+      ],
+      "purpose": "Shot recipes, motion presets and Remotion references"
+    },
+    {
+      "repo": "iart-ai/tiktok-video-skills",
+      "revision": "2a775336b5a638cbf8a61dbd785f9a1b649be016",
+      "skills": [
+        {
+          "name": "short-form-video",
+          "path": "skills/short-form-video",
+          "skillMdSha256": "27a55d05cded4d39efad74220e8a17aed22cf4b5cac0804f50754f307283ce15"
+        },
+        {
+          "name": "caption-animation",
+          "path": "skills/caption-animation",
+          "skillMdSha256": "734b05774507cf841836293c1673984cd10159c5e15cf7e6d4fe3217bd7829be"
+        },
+        {
+          "name": "countdown-video",
+          "path": "skills/countdown-video",
+          "skillMdSha256": "12cf015a78bcd5e43c96afdecb67dcd5ad83e517ed457afada2a626bceb7e968"
+        },
+        {
+          "name": "lower-thirds",
+          "path": "skills/lower-thirds",
+          "skillMdSha256": "32969ab71dda45f1810c625fb44a81e83e63d9c6897757d60f80bdf899214aeb"
+        }
+      ],
+      "sharedFiles": {
+        "LICENSE": "33d6cd35a20903b5e968a76a1e584a7aeae2c83e3e58ea58ecc50b889b83e668",
+        "scripts/README.md": "8f1bb92dfb6c741e74e1b7949a8230b824388bd311ccc47401a24245b0f6d17e",
+        "scripts/contact-sheet.sh": "a3873536da80dbb6724c2a3d462bd60a2ddc03e22dabce73bb0d0f70d4d1a361",
+        "scripts/probe-mp4.sh": "3a1bb8c5d017599e52f4bb49822259257266899ee46028663ba416acccc19e6a",
+        "scripts/seek-shot.sh": "4f02b7350669049b2f38c3761e395814be6262d6a12d7fb0a14504af51c9ba7b"
+      },
+      "purpose": "Vertical pacing, word captions, countdowns and lower thirds"
+    }
+  ],
+  "optional": [
+    {
+      "name": "tiktok-marketing",
+      "repo": "sergebulaev/tiktok-skills",
+      "revision": null,
+      "status": "Existing optional installation retained; not reinstalled because its original revision is unrecorded.",
+      "purpose": "Editorial planning and caption drafting; no publishing authorization implied."
+    }
+  ]
+}

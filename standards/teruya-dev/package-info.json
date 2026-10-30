@@ -1,0 +1,14 @@
+{
+  "name": "teruya.dev video standard",
+  "version": "3.0.0",
+  "canonical": "VIDEO_STANDARD.md",
+  "visualGuide": "output/pdf/teruya-dev-manual-visual.pdf",
+  "tokens": "tokens.json",
+  "motionPresets": "motion-presets.json",
+  "motionReference": "references/VerticalCutReveal.reference.tsx",
+  "recipes": "shotcraft-recipes.json",
+  "sceneTemplate": "scene-template.json",
+  "designReference": "references/design-reference.md",
+  "scope": "Reusable standard3.0 for future videos: SF Pro Display/Text, per-letter elastic emphasis, adaptive double glyph outline and face-priority cover crop. Approved projects remain unchanged.",
+  "fontRendering": "Local macOS San Francisco (SFNS.ttf); temporary Text/Display instances, Regular/Semibold, embedded subsets in PDF. No Apple font asset redistribution. Inter retained for historical builds only."
+}

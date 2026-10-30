@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-30",
+  "version": "3.0.0",
+  "scope": "Future videos only: SF Pro replaces Inter throughout the standard and PDF; previously approved episode unchanged.",
+  "pdfSha256": "2128cf5422e3aabda9c4f9ada9acfea5c976627c98ca41e49b1040256b0f4217",
+  "pages": 16,
+  "allPagesVisuallyInspected": false,
+  "changedPagesReinspectedAfterFinalAdjustments": [
+    2,
+    5,
+    10,
+    13,
+    15
+  ],
+  "designReferenceApplied": true,
+  "referenceColors": [
+    "#0066CC",
+    "#1D1D1F",
+    "#FFFFFF",
+    "#F5F5F7",
+    "#272729",
+    "#2997FF"
+  ],
+  "referenceRadiiMapped": true,
+  "contrastRatios": {
+    "blueOnWhite": 5.57,
+    "blueOnCanvas": 5.11,
+    "inkOnWhite": 16.83,
+    "mutedOnCanvas": 11.6,
+    "blueOnDark": 4.94,
+    "blueOnDark2": 4.75,
+    "mutedOnDark": 9.28
+  },
+  "contrastAppliesTo": "reading state; transitional opacity illustrated separately",
+  "recipeSourceEntries": 9,
+  "customPopSpecifications": 7,
+  "staticSupportingElementsAllowed": true,
+  "focalEntryAndExitRequired": true,
+  "localLinksChecked": true,
+  "jsonFilesParsed": true,
+  "videoModified": false,
+  "motionRuntimeValidated": false,
+  "grid": {
+    "spacingPx": 216,
+    "strokePx": 1.5,
+    "opacityLight": 0.07,
+    "opacityDark": 0.06,
+    "svgParametersMatchTokens": true,
+    "shownInManualLightAndDark": true,
+    "sharesCameraPlaneWithDiagram": true
+  },
+  "motionAndCameraAsCleanDesignEnergy": true,
+  "presenterTextBackground": "transparent",
+  "presenterTextAddendum": "Double glyph outlines: white inner/black outer on dark; black inner/white outer on light. Outer ring thinner. No backing. All layers share glyph geometry, transform and opacity.",
+  "layoutVariant": "presenter-whiteboard-60-40",
+  "allPagesContactSheetInspected": true,
+  "detailedPageReview": [
+    2,
+    5,
+    10,
+    13,
+    15
+  ],
+  "emphasisLetterEntry": "Elastic Pop-In",
+  "emphasisLetterExit": "Elastic Pop-Out",
+  "emphasisAnimationUnit": "grapheme cluster",
+  "presenterCameraFit": "cover; proportional spatial crop prioritizing face",
+  "presenterSideBlurAllowed": false,
+  "approvedProjectHashGuard": {
+    "filesChecked": 6,
+    "allUnchanged": true,
+    "sha256": {
+      "projects/artcraft-edicao-integral/exports/ta-vendo-toda-essa-edicao-integral.mp4": "b4f5276f62f20f157a0142f3d9c71bc1ba280a2197a69af71624701732e7cf9a",
+      "projects/artcraft-edicao-integral/exports/ta-vendo-toda-essa-edicao-integral.srt": "da075a2a1b149c676cf9c92e12c1d85e4f86f7cf4090d211474f18c06e733e29",
+      "projects/artcraft-edicao-integral/edit/ta-vendo-toda-essa-edicao-integral.fcproj": "279d8a9f205ee41fd0bd924d25d57c697f24cd0b34a297e823aeacde7e408841",
+      "projects/artcraft-edicao-integral/motion/integral-boards.ecproj": "849b079fe555a037c31ecb518a1226848386e16c83a40d9fe8abace8c09fc038",
+      "projects/artcraft-edicao-integral/remotion/src/index.tsx": "776fc4dc0f365c1d9500b0253fd48e0f317f7f44baa045101887eb681e8f4644",
+      "projects/artcraft-edicao-integral/docs/delivery.json": "81a738b644544f865ce433fd16af03cd9e5a019596f6185bfaf6e78e3908b823"
+    }
+  },
+  "visualReviewNotes": "All16pages reviewed as contact sheet after font replacement. Key typography, dense recipe, workflow and double-outline pages reviewed at full-page scale. Embedded font report verifies SF Pro only; no Inter or Helvetica. Motion specifications await next-video validation.",
+  "doubleOutlineVerified": {
+    "dark": {
+      "inner": "#FFFFFF",
+      "outer": "#000000"
+    },
+    "light": {
+      "inner": "#000000",
+      "outer": "#FFFFFF"
+    },
+    "paintOrder": [
+      "outer stroke",
+      "inner stroke",
+      "original fill"
+    ],
+    "pdfExamplesVisuallyInspected": true,
+    "highResolutionDetailReviewed": false
+  },
+  "embeddedFontFamily": "SF Pro / local macOS San Francisco",
+  "embeddedFontInstances": [
+    "Text Regular",
+    "Text Semibold",
+    "Display Semibold"
+  ],
+  "fontBuildEvidence": "output/pdf/font-build.json",
+  "fontSubstitutionDetected": false
+}

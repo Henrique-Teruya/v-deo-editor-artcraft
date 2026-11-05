@@ -38,5 +38,37 @@
       "download": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-macos-universal.dmg",
       "checksums": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/SHA256SUMS.txt"
     }
+  ],
+  "analysisTools": [
+    {
+      "name": "FFmpeg",
+      "validatedVersion": "8.1",
+      "checkedAt": "2026-11-05",
+      "scope": "Existing local CLI; media probing, audio extraction and frame sampling only.",
+      "source": "https://ffmpeg.org/"
+    },
+    {
+      "name": "FFprobe",
+      "validatedVersion": "8.1",
+      "checkedAt": "2026-11-05",
+      "scope": "Existing local CLI; source metadata inspection.",
+      "source": "https://ffmpeg.org/"
+    },
+    {
+      "name": "whisper.cpp",
+      "validatedVersion": "1.5.5",
+      "checkedAt": "2026-11-05",
+      "scope": "Temporary local analysis build, not a global installation or a new default. Automatic Portuguese transcript for planning; human audio review remains required.",
+      "source": "https://github.com/ggml-org/whisper.cpp/tree/v1.5.5",
+      "sourceArchiveSha256": "27fa5c472657af2a6cee63de349a34b23d0f3781fa9b8ef301a940cf64964a79",
+      "model": {
+        "name": "small",
+        "quantization": "q5_1",
+        "multilingual": true,
+        "source": "https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-small-q5_1.bin",
+        "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
+      },
+      "validation": "Processed all four source clips locally and produced JSON/TXT. Proper names and non-speech segments require review."
+    }
   ]
 }

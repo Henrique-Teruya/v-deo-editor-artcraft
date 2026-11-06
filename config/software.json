@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30",
+  "checkedAt": "2026-11-06",
   "policy": "Validated versions, not a claim about latest releases. Binaries are installed outside this repository.",
   "applications": [
     {
@@ -43,8 +43,8 @@
     {
       "name": "FFmpeg",
       "validatedVersion": "8.1",
-      "checkedAt": "2026-11-05",
-      "scope": "Existing local CLI; media probing, audio extraction and frame sampling only.",
+      "checkedAt": "2026-11-06",
+      "scope": "Existing local CLI; probing, HLG to SDR perceptual mapping, frame sampling, audio processing and final video validation.",
       "source": "https://ffmpeg.org/"
     },
     {
@@ -69,6 +69,35 @@
         "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb"
       },
       "validation": "Processed all four source clips locally and produced JSON/TXT. Proper names and non-speech segments require review."
+    }
+  ],
+  "productionTools": [
+    {
+      "name": "Remotion",
+      "validatedVersion": "4.0.484",
+      "checkedAt": "2026-11-06",
+      "source": "https://www.remotion.dev/",
+      "scope": "Existing local renderer and CLI; GSAP video typography, caption masks and composition. Dependencies remain outside Git.",
+      "dependencies": {
+        "react": "19.2.7",
+        "react-dom": "19.2.7",
+        "typescript": "6.0.3"
+      }
+    },
+    {
+      "name": "GSAP",
+      "validatedVersion": "3.13.0",
+      "checkedAt": "2026-11-06",
+      "source": "https://registry.npmjs.org/gsap/-/gsap-3.13.0.tgz",
+      "archiveSha256": "b570ed74abe1fbd4bb0cf43b57bf21118de1c87323659014a84339b5b6c33665",
+      "scope": "Project-local package for deterministic animation and the ScrollTrigger browser demo. No global installation."
+    },
+    {
+      "name": "HarfBuzz hb-subset",
+      "validatedVersion": "13.2.1",
+      "checkedAt": "2026-11-06",
+      "source": "https://harfbuzz.github.io/",
+      "scope": "Existing CLI; temporary optical and weight instances of the locally installed San Francisco font. Font binaries are not redistributed."
     }
   ]
 }

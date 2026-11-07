@@ -15,6 +15,7 @@ git config core.hooksPath .githooks
 2. Instale as revisões registradas das [skills](skills/README.md).
 3. Use o [manual operacional teruya.dev](standards/teruya-dev/VIDEO_STANDARD.md) e o [fluxo de produção](WORKFLOW.md).
 4. Consulte os [limites de versionamento e atualização](docs/REPOSITORY.md).
+5. Para narração com a própria voz no desktop Windows, abra o [estúdio local de voz](docs/VOICE.md). O roteiro e o padrão visual continuam seguindo o fluxo acima.
 
 ## Padrão ativo: teruya.dev 3.0
 

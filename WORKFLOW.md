@@ -12,6 +12,14 @@ Priorizar FilmCraft e EffectCraft para edição e animação, com VectorCraft pa
 
 ## Fluxo proposto
 
+### Opção: narração sintética com a própria voz
+
+No desktop Windows, o [estúdio de voz](docs/VOICE.md) acrescenta uma fonte de áudio ao fluxo existente. Criar o roteiro normalmente; cadastrar uma amostra própria e consentida; gerar e escutar o WAV; importar no FilmCraft; então transcrever o arquivo final e alinhar as legendas. A narração em português usa Chatterbox Multilingual V3, com conversão opcional de timbre pelo OpenVoice V2. Não atribuir o resultado somente ao OpenVoice, nem prometer cópia de sotaque, personalidade ou fidelidade sem teste.
+
+O apresentador pode aparecer apenas em trechos reais identificados. Não sincronizar uma gravação antiga da boca com texto sintético novo. Amostras, embeddings e áudios ficam fora do Git. A geração local não publica vídeos e não altera o processo de escrever roteiros. Na CPU, reservar alguns minutos por trecho. Escuta e revisão de pronúncia continuam necessárias.
+
+### Montagem orientada pelo áudio
+
 1. Selecionar a gravação e montar a fala: o áudio determina a duração e a ordem das ideias.
 2. Marcar, na linha do tempo, cada ideia, palavra de ênfase, comparação e mudança de assunto.
 3. Definir onde o apresentador aparece: abertura, opinião/ênfase pessoal, transição ou fechamento quando fizer sentido. A duração exata depende da gravação.

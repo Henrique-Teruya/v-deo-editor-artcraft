@@ -1,5 +1,9 @@
 # Setup de edição
 
+## Voz local no Windows
+
+O [guia de voz](VOICE.md) documenta a instalação testada do OpenVoice V2 com Chatterbox Multilingual V3 para português, o cadastro da própria amostra e a exportação de WAV para o FilmCraft. O runtime fica fora deste repositório; fontes e modelos têm revisões fixadas em `config/voice-runtime.json` e `config/voice-models.json`. Abrir com `python scripts/voice_studio.py`. Instalação em outro desktop: `python scripts/setup_voice.py --install`, usando Python 3.12, uv, Git e FFmpeg.
+
 Fluxo principal no macOS. Os instaladores e as dependências ficam fora do repositório; aqui ficam os comandos e as versões. As versões abaixo foram usadas neste projeto, não são uma promessa de serem as mais recentes.
 
 ## ArtCraft

@@ -99,5 +99,28 @@
       "source": "https://harfbuzz.github.io/",
       "scope": "Existing CLI; temporary optical and weight instances of the locally installed San Francisco font. Font binaries are not redistributed."
     }
-  ]
+  ],
+  "voiceTools": {
+    "checkedAt": "2026-11-07",
+    "platform": "Windows / Python 3.12 / CPU",
+    "openvoice": {
+      "revision": "74a1d147b17a8c3092dd5430504bd83ef6c7eb23",
+      "model": "V2 converter",
+      "source": "https://github.com/myshell-ai/OpenVoice"
+    },
+    "chatterbox": {
+      "version": "0.1.7",
+      "revision": "ab55923c27757c90cfcc407baa57dc25a7d25217",
+      "model": "Multilingual V3",
+      "source": "https://github.com/resemble-ai/chatterbox"
+    },
+    "pytorch": "2.6.0+cpu",
+    "torchaudio": "2.6.0+cpu",
+    "ffmpeg": "9.0.2",
+    "fasterWhisper": "1.2.1",
+    "remotion": "4.0.539",
+    "lock": "voice-requirements.txt",
+    "models": "voice-models.json",
+    "validation": "Strict model load, numerical converter inference, Portuguese own-reference speech generation; user listening assessment pending. No automatic updates."
+  }
 }

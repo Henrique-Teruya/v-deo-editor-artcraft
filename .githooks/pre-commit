@@ -1,3 +1,11 @@
 #!/bin/sh
 set -eu
-exec python3 scripts/check_repository.py --staged
+# Windows may expose a nonfunctional Microsoft Store alias as python3.
+# Run the same validation with the first working Python 3 interpreter.
+for interpreter in python python3; do
+  if "$interpreter" -c 'import sys; sys.exit(sys.version_info.major != 3)' >/dev/null 2>&1; then
+    exec "$interpreter" scripts/check_repository.py --staged
+  fi
+done
+printf '%s\n' 'Python 3 is required to validate the staged repository.' >&2
+exit 1

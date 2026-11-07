@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-07",
+  "python": "3.12",
+  "device": "cpu",
+  "openvoice": {
+    "repository": "https://github.com/myshell-ai/OpenVoice.git",
+    "revision": "74a1d147b17a8c3092dd5430504bd83ef6c7eb23",
+    "model": "V2 converter"
+  },
+  "chatterbox": {
+    "repository": "https://github.com/resemble-ai/chatterbox.git",
+    "revision": "ab55923c27757c90cfcc407baa57dc25a7d25217",
+    "model": "Multilingual V3",
+    "language": "pt",
+    "maintenanceNote": "Upstream reports retirement of this research project in August 2026. Versions are pinned; no automatic updates."
+  },
+  "perth": {
+    "repository": "https://github.com/resemble-ai/Perth.git",
+    "revision": "ff1c8ac55a976971245cdd53c18d6131ca00d993"
+  },
+  "mode": "Local conversion core plus local Portuguese TTS; not the upstream Gradio/MeloTTS demo",
+  "voicePolicy": "Only user-selected own-voice references. No bundled speaker conditionals or example recordings.",
+  "qualityStatus": "Pending Henrique onboarding and listening review"
+}
